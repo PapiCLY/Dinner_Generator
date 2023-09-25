@@ -15,6 +15,7 @@ showNewDinner = ()=>{
     const showDinner = document.querySelector('#dinnerTime')
     const randomItem = food[Math.floor(Math.random()*food.length)]
     showDinner.textContent = randomItem
+    showDinner.style.color='black'
 }
 
 //function that allows user to add a new dinner to the random dinners
@@ -27,7 +28,7 @@ newDinnerToEat = ()=>{
     } else{
         food.push(newDinner);
         clearField();
-        showDinner.textContent = 'New item submitted!'
+        showDinner.textContent = `${newDinner} has been added to the list!`
         showDinner.style.color = 'green'
     }
 }
