@@ -9,23 +9,23 @@ const newDinnerBtn = document.querySelector('#newDinnerBtn').addEventListener('c
     newDinnerToEat()
 })
 
+
+//function to show the random dinners
 showNewDinner = ()=>{
     const showDinner = document.querySelector('#dinnerTime')
     const randomItem = food[Math.floor(Math.random()*food.length)]
     showDinner.textContent = randomItem
 }
 
+//function that allows user to add a new dinner to the random dinners
 newDinnerToEat = ()=>{
     let newDinnerInput = document.querySelector('#addToList')
     const newDinner = newDinnerInput.value
     food.push(newDinner)
     clearField()
-    
-    // if(){
-
-    // }
 }
 
+//function to clear the input field after a new dinner idea has been submitted
 clearField=()=>{
     const newDinnerInput = document.querySelector('#addToList')
     newDinnerInput.value = ''
