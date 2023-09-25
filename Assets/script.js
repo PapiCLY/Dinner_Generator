@@ -8,4 +8,6 @@ const dinnerBtn = document.querySelector('#dinnerBtn').addEventListener('click',
 
 showNewDinner = ()=>{
     const showDinner = document.querySelector('#dinnerTime')
+    const randomItem = food[Math.floor(Math.random()*food.length)]
+    console.log(randomItem)
 }
