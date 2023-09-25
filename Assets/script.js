@@ -27,6 +27,8 @@ newDinnerToEat = ()=>{
     } else{
         food.push(newDinner);
         clearField();
+        showDinner.textContent = 'New item submitted!'
+        showDinner.style.color = 'green'
     }
 }
 
