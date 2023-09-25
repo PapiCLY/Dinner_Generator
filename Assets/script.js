@@ -5,6 +5,9 @@ const newDinner = document.querySelector('#addToList').value
 const dinnerBtn = document.querySelector('#dinnerBtn').addEventListener('click', ()=>{
     showNewDinner();
 })
+const newDinnerBtn = document.querySelector('#newDinnerBtn').addEventListener('click', ()=>{
+    newDinnerToEat()
+})
 
 showNewDinner = ()=>{
     const showDinner = document.querySelector('#dinnerTime')
@@ -12,6 +15,8 @@ showNewDinner = ()=>{
     showDinner.textContent = randomItem
 }
 
-newDinnertoEat = ()=>{
-    
+newDinnerToEat = ()=>{
+    const newDinner = document.querySelector('#addToList').value
+    food.push(newDinner)
+    console.log(food)
 }
