@@ -19,7 +19,7 @@ showNewDinner = ()=>{
 
 //function that allows user to add a new dinner to the random dinners
 newDinnerToEat = ()=>{
-    let newDinnerInput = document.querySelector('#addToList')
+    const newDinnerInput = document.querySelector('#addToList')
     const newDinner = newDinnerInput.value
     food.push(newDinner)
     clearField()
