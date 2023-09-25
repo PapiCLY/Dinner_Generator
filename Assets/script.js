@@ -1,7 +1,7 @@
 //globals
 let food = ['Lasagna', 'Curry Chicken & Rice', 'Baked Ziti', 'Speghetti and ground Turkey']
 const showDinner = document.querySelector('#dinnerTime')
-const newDinner = document.querySelector('#addToList').value
+let newDinner = document.querySelector('#addToList').value
 const dinnerBtn = document.querySelector('#dinnerBtn').addEventListener('click', ()=>{
     showNewDinner();
 })
@@ -16,7 +16,18 @@ showNewDinner = ()=>{
 }
 
 newDinnerToEat = ()=>{
-    const newDinner = document.querySelector('#addToList').value
+    let newDinnerInput = document.querySelector('#addToList')
+    const newDinner = newDinnerInput.value
     food.push(newDinner)
-    console.log(food)
+    clearField()
+    
+    // if(){
+
+    // }
+}
+
+clearField=()=>{
+    const newDinnerInput = document.querySelector('#addToList')
+    newDinnerInput.value = ''
+    
 }
