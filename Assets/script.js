@@ -20,9 +20,13 @@ showNewDinner = ()=>{
 //function that allows user to add a new dinner to the random dinners
 newDinnerToEat = ()=>{
     const newDinnerInput = document.querySelector('#addToList')
-    const newDinner = newDinnerInput.value
-    food.push(newDinner)
-    clearField()
+    const newDinner = newDinnerInput.value.trim()
+    if(newDinner === ''){
+        showDinner.textContent = 'Please enter a valid input!';
+    } else{
+        food.push(newDinner);
+        clearField();
+    }
 }
 
 //function to clear the input field after a new dinner idea has been submitted
