@@ -8,7 +8,7 @@ const dinnerBtn = document.querySelector('#dinnerBtn').addEventListener('click',
 const newDinnerBtn = document.querySelector('#newDinnerBtn').addEventListener('click', ()=>{
     newDinnerToEat()
 })
-
+const numsAndChars = /[^a-zA-Z0-9\s]/;
 
 //function to show the random dinners
 showNewDinner = ()=>{
@@ -21,8 +21,9 @@ showNewDinner = ()=>{
 newDinnerToEat = ()=>{
     const newDinnerInput = document.querySelector('#addToList')
     const newDinner = newDinnerInput.value.trim()
-    if(newDinner === ''){
+    if(newDinner === '' || numsAndChars.test(newDinner)){
         showDinner.textContent = 'Please enter a valid input!';
+        showDinner.style.color = 'red'
     } else{
         food.push(newDinner);
         clearField();
