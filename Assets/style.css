@@ -3,17 +3,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* applies linear gradient to entire page */
-/* --------- */
-html, body{
-    height: 100%;
-}
 body{
-    background-image: linear-gradient(to bottom right, rgb(102, 158, 204), white);
-    margin: 0;
+    background-color: rgb(155, 198, 233);
 }
-/* ---------- */
-/* applies linear gradient to entire page */
+
 
 h1{
     font-size: xx-large;
@@ -38,10 +31,22 @@ h1{
     margin: auto;
 }
 
-#midSection p{
+.textSection{
     background-color: rgb(31, 31, 128);
     height: 368px;
     color: white;
     text-align: center;
     padding: 20px;
+    border-radius: 15px 0px 0px 50px;
+    box-shadow: 0px 10px 85px black;
+}
+.hrColor{
+    background-color: darkgray;
+    height: 2px;
+    border: none;
+}
+
+img{
+    border-radius: 0px 50px 15px 0px;
+    box-shadow: 0px 10px 85px black;
 }
