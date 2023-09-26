@@ -53,6 +53,7 @@ img{
 
 .generator{
     background-color: white;
+    margin-top: 100px;
 }
 
 h2{
@@ -63,7 +64,6 @@ h2{
 .generator section{
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
     flex-wrap: wrap;
 }
 .startedColor{
