@@ -28,7 +28,7 @@ newDinnerToEat = ()=>{
     } else{
         food.push(newDinner);
         clearField();
-        showDinner.innerHTML = `<span style="font-weight: bold; text-decoration: underline;">${newDinner}</span> has been added to the list!`;
+        showDinner.innerHTML = `<span style="font-weight: bold;">${newDinner}</span> has been added to the list!`;
         showDinner.style.color = 'green'
     }
 }
