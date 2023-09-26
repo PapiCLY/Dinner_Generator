@@ -20,7 +20,7 @@ h1{
     font-family: 'Lilita One', Cursive;
     color: white;
     margin: 0;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 .contactBar{
     display: flex;
@@ -35,7 +35,7 @@ h1{
 }
 .contactBar ul li{
     display: inline;
-    margin-right: 25px;
+    margin-right: 65px;
     align-items: center;
 }
 a{
@@ -44,7 +44,14 @@ a{
     color: white;
     font-weight: bold;
     font-size: 20px;
+    transition: ease 0.3s, color 0.3s, box-shadow 0.3s;
 }
+
+a:hover{
+    color: rgb(240, 240, 155);
+    
+}
+
 
 /*Image section*/
 #midSection{
@@ -86,7 +93,7 @@ hr.hrColor{
     margin-top: 40px;
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: beige;
+    color: rgb(240, 240, 155);
     font-size: 25px;
     line-height: 35px;
     font-style: italic;
