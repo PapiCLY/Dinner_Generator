@@ -64,18 +64,67 @@ a{
     padding: 20px;
     border-radius: 15px 0px 0px 50px;
     box-shadow: 0px 12px 105px rgb(56, 149, 224);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
 }
-.hrColor{
-    background-color: darkgray;
-    height: 2px;
+
+.top{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+hr.hrColor{
     border: none;
+    border-top: 6px dotted gray;
+    width: 30%;
+    margin: auto;
+}
+
+.bottom{
+    margin-top: 40px;
+    width: 100%;
 }
 
 img{
     border-radius: 0px 50px 15px 0px;
     box-shadow:55px 12px 105px rgb(56, 149, 224);
 }
-
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  .down-arrow {
+    animation: jumpInfinite 1.5s infinite;
+  }
 
 /*Dinner Generator*/
 .generator{

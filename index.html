@@ -30,14 +30,15 @@
         </div>
         <div class="textContainer">
             <div class="textSection">
-                <p>
+                <p class="top">
                     Welcome to the Dinner Generator. 
                     Helping families plan their meals, one after-school at a time!
                 </p>
                 <hr class="hrColor">
-                <p>
+                <p class="bottom">
                     Use the Generator below to choose your next meal!
                 </p>
+                <div class="down-arrow"></div>
             </div>
         </div>
     </section>
@@ -49,15 +50,16 @@
         </div>
         <section class="card-container">
             <div class="card current-list">
-                <div id="CurrentList">
-                    <button id="dinnerBtn"> Click For Dinner Ideas</button>
-                </div>
+                
             </div>
             <div class="card new-dinner-idea">
                 <form id="NewList">
                     <input type="text" id="addToList" placeholder="Add a new dinner...">
                     <button type='button' id="newDinnerBtn">Add new dinner idea</button>
                 </form>
+                <div id="CurrentList">
+                    <button id="dinnerBtn"> Click For Dinner Ideas</button>
+                </div>
                 <div class="viewDinner">
                     <p id="dinnerTime"></p>
                 </div>
