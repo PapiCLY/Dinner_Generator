@@ -9,7 +9,7 @@ html, body{
     height: 100%;
 }
 body{
-    background-image: linear-gradient(to bottom right, coral, white);
+    background-image: linear-gradient(to bottom right, rgb(102, 158, 204), white);
     margin: 0;
 }
 /* ---------- */
@@ -30,4 +30,18 @@ h1{
 .contactBar ul li{
     display: inline;
     margin-right: 20px;
+}
+
+#midSection{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+#midSection p{
+    background-color: rgb(31, 31, 128);
+    height: 368px;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
