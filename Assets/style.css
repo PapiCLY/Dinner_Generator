@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* applies linear gradient to entire page */
+/* --------- */
+html, body{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom right, wheat, white);
+    margin: 0;
+}
+/* ---------- */
+/* applies linear gradient to entire page */
+
+h1{
+    font-size: xx-large;
+}
+.contactBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.contactBar ul{
+    list-style-type: none;
+}
+.contactBar ul li{
+    display: inline;
+    margin-right: 20px;
+}
