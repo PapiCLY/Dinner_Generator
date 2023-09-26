@@ -54,3 +54,13 @@ img{
 .generator{
     background-color: white;
 }
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: rgb(18, 75, 40);
+}
+
+.startedColor{
+    margin-left: 9px;
+}
