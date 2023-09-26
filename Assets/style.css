@@ -176,6 +176,42 @@ h2{
     margin-top: 20px;
 }
 
+#addToList{
+    border: none;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+#newDinnerBtn{
+    background-color: rgb(240, 240, 155);
+    padding: 10px 50px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+#dinnerBtn{
+    background-color: rgb(56, 149, 224);
+    padding: 10px 45px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    
+}
+
+
 .card-container {
     text-align: center;
     display: flex;
@@ -203,6 +239,8 @@ h2{
 
 
 .material-symbols-outlined {
+    font-size: 50px !important; /*!important forces the font size to change*/
+    padding-bottom: 25px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
