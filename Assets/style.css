@@ -180,7 +180,7 @@ h2{
     border: none;
     color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    /* text-align: center; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 30px;
     border-radius: 8px;
@@ -197,6 +197,12 @@ h2{
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
+    transition: ease 0.3s, background-color 0.3s;
+}
+
+#newDinnerBtn:hover{
+    background-color: rgb(136, 136, 80);
+    cursor: pointer;
 }
 
 #dinnerBtn{
@@ -207,8 +213,20 @@ h2{
     font-weight: bold;
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px;
-    
+    margin-bottom: 45px;
+    transition: ease 0.3s, background-color 0.3s, color 0.3s;
+}
+
+#dinnerBtn:hover{
+    background-color: rgb(36, 74, 105);
+    color: beige;
+    cursor: pointer;
+}
+
+#dinnerTime{
+    border: 2px dashed rgb(170, 169, 169);
+    border-radius: 15px;
+    padding: 20px;
 }
 
 
@@ -231,10 +249,24 @@ h2{
     margin-bottom: 20px;
     height: 350px;
     width: 300px;
+    transition: ease 0.3s, color 0.2s, background-color 0.3s, border 0.3s, transform 0.3s;
+}
+
+.card:hover{
+    transform: scale(1);
+    background-color: rgb(240, 240, 228);
+    color: rgb(255, 255, 255)
 }
 
 .card:last-child {
     margin-right: 0;
+}
+
+#lunchTime{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 25px;
+    color: white;
 }
 
 
