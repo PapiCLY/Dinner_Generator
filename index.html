@@ -39,20 +39,23 @@
     </section>
         
     <!-- Generator -->
-    <section>
-        <div id="CurrentList">
-            <button id="dinnerBtn"> Click For Dinner Ideas</button>
-        </div>
+    <section class="generator">
+        <section>
+            <div id="CurrentList">
+                <button id="dinnerBtn"> Click For Dinner Ideas</button>
+            </div>
+        </section>
+        <section>
+            <form id="NewList">
+                <input type="text" id="addToList" placeholder="Add a new dinner...">
+                <button type='button' id="newDinnerBtn">Add new dinner idea</button>
+            </form>
+            <div class="viewDinner">
+                <p id="dinnerTime"></p>
+            </div>
+        </section>
     </section>
-    <section>
-        <form id="NewList">
-            <input type="text" id="addToList" placeholder="Add a new dinner...">
-            <button type='button' id="newDinnerBtn">Add new dinner idea</button>
-        </form>
-        <div class="viewDinner">
-            <p id="dinnerTime"></p>
-        </div>
-    </section>
+        
     <!-- Footer and contact details -->
     <footer>
         <div class="footerDetails">
