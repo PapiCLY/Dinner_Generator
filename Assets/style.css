@@ -60,7 +60,49 @@ h2{
     justify-content: center;
     color: rgb(18, 75, 40);
 }
-
+.generator section{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
 .startedColor{
     margin-left: 9px;
 }
+
+.generator {
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px; 
+}
+
+.section-title {
+    font-size: large;
+    margin-top: 20px;
+}
+
+.card-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+
