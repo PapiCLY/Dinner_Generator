@@ -178,7 +178,7 @@ h2{
 
 #addToList{
     border: none;
-    color: lightgray;
+    color: gray;
     font-family: Arial, Helvetica, sans-serif;
     /* text-align: center; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

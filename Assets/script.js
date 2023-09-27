@@ -16,6 +16,7 @@ showNewDinner = ()=>{
     const randomItem = food[Math.floor(Math.random()*food.length)]
     showDinner.textContent = randomItem
     showDinner.style.color='black'
+    showDinner.style.fontFamily = 'Lobster, cursive;' 
 }
 
 //function that allows user to add a new dinner to the random dinners
@@ -25,6 +26,7 @@ newDinnerToEat = ()=>{
     if(newDinner === '' || numsAndChars.test(newDinner)){
         showDinner.textContent = 'Please enter a valid input!';
         showDinner.style.color = 'red'
+        
     } else{
         food.push(newDinner);
         clearField();
