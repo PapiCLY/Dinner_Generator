@@ -12,6 +12,7 @@
 
 body{
     background-color: rgb(155, 198, 233);
+    
 }
 
 /*header*/
@@ -296,3 +297,5 @@ footer{
     margin-right: 50px;
     align-items: center;
 }
+
+/*Mobile phone and tablet screens*/
