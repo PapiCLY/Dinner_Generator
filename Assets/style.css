@@ -280,4 +280,19 @@ h2{
   'opsz' 24
 }
 
+/*Footer*/
 
+footer{
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.footerDetails ul{
+    display: flex;
+    justify-content: center;
+    /* margin-right: 50px; */
+}
+
+.fa-brands{
+    margin-right: 50px;
+    align-items: center;
+}
