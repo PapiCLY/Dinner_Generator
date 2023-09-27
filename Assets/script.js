@@ -24,7 +24,7 @@ newDinnerToEat = ()=>{
     const newDinnerInput = document.querySelector('#addToList')
     const newDinner = newDinnerInput.value.trim()
     if(newDinner === '' || numsAndChars.test(newDinner)){
-        showDinner.textContent = 'Please enter a valid input!';
+        showDinner.textContent = 'Whoops! looks like you forgot to add a menu item or entered an invalid input.';
         showDinner.style.color = 'red'
         
     } else{
