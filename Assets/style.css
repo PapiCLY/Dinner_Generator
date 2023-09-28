@@ -16,6 +16,23 @@ body{
 }
 
 /*header*/
+
+        /*Hamburger menu*/
+        .hamburgerButton{
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bar{
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            margin: 6px 0;
+        }
+
+        
 h1{
     font-size: 60px;
     font-family: 'Lilita One', Cursive;
@@ -33,6 +50,7 @@ h1{
     list-style-type: none;
     display: flex;
     align-items: center;
+    padding: 0;
 }
 .contactBar ul li{
     display: inline;
@@ -299,3 +317,12 @@ footer{
 }
 
 /*Mobile phone and tablet screens*/
+@media screen and (max-width: 768px){
+    .contactBar ul{
+        display: none;
+        
+    }
+    .hamburgerButton{
+        display: block;
+    }
+}
