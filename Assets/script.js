@@ -9,13 +9,17 @@ const newDinnerBtn = document.querySelector('#newDinnerBtn').addEventListener('c
     newDinnerToEat()
 })
 const numsAndChars = /[^a-zA-Z0-9\s]/;
-const hamburgerButton = document.querySelector('.hamburgerButton')
-const navLinks = document.querySelector('.contactBar ul')
+
 
 //Hamburger Menu
-hamburgerButton.addEventListener('click', ()=>{
-    navLinks.classList.toggle('show')
-})
+menuButton = ()=>{
+    let x = document.getElementById('myLinks');
+    if(x.style.display === 'block'){
+        x.style.display = 'none';
+    } else{
+        x.style.display = 'block';
+    }
+}
 
 //function to show the random dinners
 showNewDinner = ()=>{
