@@ -1,5 +1,5 @@
 //globals
-let food = ['Lasagna', 'Curry Chicken & Rice', 'Baked Ziti', 'Speghetti and ground Turkey']
+let food = ['Lasagna', 'Curry Chicken w/Rice', 'Baked Ziti', 'Speghetti and ground Turkey', 'Jerk Chicken w/ rice/peas']
 const showDinner = document.querySelector('#dinnerTime')
 let newDinner = document.querySelector('#addToList').value
 const dinnerBtn = document.querySelector('#dinnerBtn').addEventListener('click', ()=>{
