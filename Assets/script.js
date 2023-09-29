@@ -15,6 +15,9 @@ let aboutSpan = document.querySelector('.abtClose');
 let why = document.getElementById('whyModal')
 let whyBtn = document.getElementById('whyBtn')
 let whySpan = document.querySelector('.whyClose')
+let contact = document.getElementById('contactModal')
+let contactBtn = document.getElementById('contactBtn')
+let contactSpan = document.querySelector('.contactClose')
 
 //opens modal
 aboutBtn.onclick = function(){
@@ -25,6 +28,9 @@ whyBtn.onclick = function(){
     why.style.display = 'block';
 }
 
+contactBtn.onclick = function(){
+    contact.style.display = 'block'
+}
 //close modal
 aboutSpan.onclick = function(){
     about.style.display = 'none';
@@ -34,11 +40,16 @@ whySpan.onclick = function(){
     why.style.display = 'none';
 }
 
+contactSpan.onclick = function(){
+    contact.style.display = 'none';
+}
+
 //click anywhere to close modal
 window.onclick = function(event){
-    if(event.target === about || event.target === why){
+    if(event.target === about || event.target === why || event.target === contact){
         about.style.display = 'none'
         why.style.display = 'none'
+        contact.style.display = 'none'
     }
 }
 

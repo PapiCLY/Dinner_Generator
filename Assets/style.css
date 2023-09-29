@@ -119,9 +119,20 @@ a:hover{
     text-align: center;
     font-weight: bold;
   }
+
+  .contactContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+  }
   
   /* The Close Button */
-  .whyClose, .abtClose {
+  .whyClose, .abtClose, .contactClose {
     color: #ec0404;
     float: right;
     font-size: 18px;
@@ -137,6 +148,13 @@ a:hover{
 
   .abtClose:hover,
   .abtClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .contactClose:hover,
+  .contactClose:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
