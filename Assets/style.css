@@ -18,9 +18,26 @@ body{
 /*header*/
 
         /*Hamburger menu*/
-        
+        /* .contactBar #myLinks{
+            display: none;
+        } */
 
-        
+        .topNav a{
+            display: block;
+        }
+
+        .contactBar .icon{
+            display: none;
+        }
+
+#myLinks{
+    display: flex;
+}        
+
+#myLinks a{
+    margin-right: 40px;
+    align-items: center;
+}
 h1{
     font-size: 60px;
     font-family: 'Lilita One', Cursive;
@@ -305,12 +322,30 @@ footer{
 }
 
 /*Mobile phone and tablet screens*/
-@media screen and (max-width: 768px){
-    .contactBar ul{
+/* Mobile phone and tablet screens */
+@media screen and (max-width: 600px) {
+    .topNav a:not(:first-child) {
         display: none;
-        
     }
-    .hamburgerButton{
+
+    .topNav a.icon {
+        float: right;
         display: block;
+    }
+
+    .topNav.responsive {
+        position: relative;
+    }
+
+    .topNav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }

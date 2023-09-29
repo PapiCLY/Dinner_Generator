@@ -12,13 +12,14 @@ const numsAndChars = /[^a-zA-Z0-9\s]/;
 
 
 //Hamburger Menu
-menuButton = ()=>{
-    let x = document.getElementById('myLinks');
-    if(x.style.display === 'block'){
-        x.style.display = 'none';
+function menuButton(event){
+    let x = document.getElementByid('myLinks');
+    if(x.className === 'topNav'){
+        x.className += 'responsive';
     } else{
-        x.style.display = 'block';
+        x.className = 'topNav';
     }
+    event.preventDefault()
 }
 
 //function to show the random dinners
