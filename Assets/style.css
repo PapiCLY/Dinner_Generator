@@ -121,15 +121,22 @@ a:hover{
   }
   
   /* The Close Button */
-  .close {
+  .whyClose, .abtClose {
     color: #ec0404;
     float: right;
     font-size: 18px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  .whyClose:hover,
+  .whyClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .abtClose:hover,
+  .abtClose:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;

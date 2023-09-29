@@ -11,9 +11,10 @@ const newDinnerBtn = document.querySelector('#newDinnerBtn').addEventListener('c
 const numsAndChars = /[^a-zA-Z0-9\s]/;
 let about = document.getElementById('aboutModal')
 let aboutBtn = document.getElementById('abtBtn')
-let span = document.querySelector('.close');
+let aboutSpan = document.querySelector('.abtClose');
 let why = document.getElementById('whyModal')
 let whyBtn = document.getElementById('whyBtn')
+let whySpan = document.querySelector('.whyClose')
 
 //opens modal
 aboutBtn.onclick = function(){
@@ -25,8 +26,12 @@ whyBtn.onclick = function(){
 }
 
 //close modal
-span.onclick = function(){
+aboutSpan.onclick = function(){
     about.style.display = 'none';
+}
+
+whySpan.onclick = function(){
+    why.style.display = 'none';
 }
 
 //click anywhere to close modal
