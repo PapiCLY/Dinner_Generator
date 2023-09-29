@@ -92,39 +92,54 @@ window.addEventListener('load', () => {
   });
   
 //function that allows user to add a new dinner to the random dinners
-newDinnerToEat = ()=>{
-    const newDinnerInput = document.querySelector('#addToList')
-    const newDinner = newDinnerInput.value.trim()
-    if(newDinner === '' || numsAndChars.test(newDinner)){
-        showDinner.textContent = 'Whoops! looks like you forgot to add a menu item or entered an invalid input.';
-        showDinner.style.color = 'red'
-        
-    } else{
-        food.push(newDinner);
-        clearField();
-        showDinner.innerHTML = `<span style="font-weight: bold;">${newDinner}</span> has been added to the menu!`;
-        showDinner.style.color = 'green'
-
-           // Store the new dinner item in local storage
-    let history = JSON.parse(localStorage.getItem('dinnerHistory')) || [];
-    history.push(newDinner);
-    localStorage.setItem('dinnerHistory', JSON.stringify(history));
-
-    // Append the new dinner item as a button to the DOM
-    const historyContainer = document.querySelector('#historyContainer');
-    if(history.length <=7){
+newDinnerToEat = () => {
+    const newDinnerInput = document.querySelector('#addToList');
+    const newDinner = newDinnerInput.value.trim();
+    if (newDinner === '' || numsAndChars.test(newDinner)) {
+      showDinner.textContent = 'Whoops! looks like you forgot to add a menu item or entered an invalid input.';
+      showDinner.style.color = 'red';
+    } else {
+      food.push(newDinner);
+      clearField();
+      showDinner.innerHTML = `<span style="font-weight: bold;">${newDinner}</span> has been added to the menu!`;
+      showDinner.style.color = 'green';
+  
+      // Store the new dinner item in local storage
+      let history = JSON.parse(localStorage.getItem('dinnerHistory')) || [];
+      history.push(newDinner);
+      if (history.length > 7) {
+        history.shift(); // Remove the oldest item from the history array
+      }
+      localStorage.setItem('dinnerHistory', JSON.stringify(history));
+  
+      // Append the new dinner item as a button to the DOM
+      const historyContainer = document.querySelector('#historyContainer');
+      historyContainer.innerHTML = ''; // Clear the history container
+      for (const dinner of history) {
         const newButton = document.createElement('button');
-        newButton.textContent = newDinner;
+        newButton.textContent = dinner;
         newButton.addEventListener('click', () => {
-          showDinner.textContent = newDinner;
+          showDinner.textContent = dinner;
           showDinner.style.color = 'black';
           showDinner.style.fontFamily = 'Lobster, cursive;';
         });
         historyContainer.appendChild(newButton);
-        }
+      }
     }
-    
-}
+  };
+//     if(history.length <=7){
+//         const newButton = document.createElement('button');
+//         newButton.textContent = newDinner;
+//         newButton.addEventListener('click', () => {
+//           showDinner.textContent = newDinner;
+//           showDinner.style.color = 'black';
+//           showDinner.style.fontFamily = 'Lobster, cursive;';
+//         });
+//         historyContainer.appendChild(newButton);
+//         }
+//     }
+   
+// }
 
 //function to clear the input field after a new dinner idea has been submitted
 clearField=()=>{
