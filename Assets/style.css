@@ -32,12 +32,13 @@ body{
 
 #myLinks{
     display: flex;
+    align-items: center;
 }        
 
 #myLinks a{
     margin-right: 40px;
-    align-items: center;
 }
+
 h1{
     font-size: 60px;
     font-family: 'Lilita One', Cursive;
@@ -51,7 +52,7 @@ h1{
     padding: 100px;
 }
 
-.contactBar ul{
+/* .contactBar ul{
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -61,7 +62,7 @@ h1{
     display: inline;
     margin-right: 65px;
     align-items: center;
-}
+} */
 a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
