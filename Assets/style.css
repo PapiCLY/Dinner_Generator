@@ -96,22 +96,24 @@ a:hover{
     /* -webkit-filter: blur(8px); */
   }
 
-  .modal
   
   /* Modal Content */
   .aboutContent {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    border: none;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
   }
   
   /* The Close Button */
   .close {
-    color: #aaaaaa;
+    color: #ec0404;
     float: right;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: bold;
   }
   
