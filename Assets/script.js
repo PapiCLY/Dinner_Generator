@@ -12,10 +12,16 @@ const numsAndChars = /[^a-zA-Z0-9\s]/;
 let about = document.getElementById('aboutModal')
 let aboutBtn = document.getElementById('abtBtn')
 let span = document.querySelector('.close');
+let why = document.getElementById('whyModal')
+let whyBtn = document.getElementById('whyBtn')
 
 //opens modal
 aboutBtn.onclick = function(){
     about.style.display = 'block';
+}
+
+whyBtn.onclick = function(){
+    why.style.display = 'block';
 }
 
 //close modal
@@ -25,10 +31,13 @@ span.onclick = function(){
 
 //click anywhere to close modal
 window.onclick = function(event){
-    if(event.target === about){
+    if(event.target === about || event.target === why){
         about.style.display = 'none'
+        why.style.display = 'none'
     }
 }
+
+
 
 //Hamburger Menu
 function menuButton(event){
