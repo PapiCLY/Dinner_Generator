@@ -9,7 +9,26 @@ const newDinnerBtn = document.querySelector('#newDinnerBtn').addEventListener('c
     newDinnerToEat()
 })
 const numsAndChars = /[^a-zA-Z0-9\s]/;
+let about = document.getElementById('aboutModal')
+let aboutBtn = document.getElementById('abtBtn')
+let span = document.querySelector('.close');
 
+//opens modal
+aboutBtn.onclick = function(){
+    about.style.display = 'block';
+}
+
+//close modal
+span.onclick = function(){
+    about.style.display = 'none';
+}
+
+//click anywhere to close modal
+window.onclick = function(event){
+    if(event.target === about){
+        about.style.display = 'none'
+    }
+}
 
 //Hamburger Menu
 function menuButton(event){
