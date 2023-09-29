@@ -75,6 +75,22 @@ showNewDinner = ()=>{
     showDinner.style.fontFamily = 'Lobster, cursive;' 
 }
 
+// Load the dinner history from local storage when the page loads
+window.addEventListener('load', () => {
+    const history = JSON.parse(localStorage.getItem('dinnerHistory')) || [];
+    const historyContainer = document.querySelector('#historyContainer');
+    for (const dinner of history) {
+      const newButton = document.createElement('button');
+      newButton.textContent = dinner;
+      newButton.addEventListener('click', () => {
+        showDinner.textContent = dinner;
+        showDinner.style.color = 'black';
+        showDinner.style.fontFamily = 'Lobster, cursive;';
+      });
+      historyContainer.appendChild(newButton);
+    }
+  });
+  
 //function that allows user to add a new dinner to the random dinners
 newDinnerToEat = ()=>{
     const newDinnerInput = document.querySelector('#addToList')
