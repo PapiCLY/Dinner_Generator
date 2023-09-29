@@ -74,7 +74,6 @@ a{
 
 a:hover{
     color: rgb(240, 240, 155);
-    
 }
 
 
@@ -96,6 +95,19 @@ a:hover{
     /* -webkit-filter: blur(8px); */
   }
 
+  .modalTitle{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #emailLink{
+    color: rgb(111, 83, 211);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
   
   /* Modal Content */
   .aboutContent {
@@ -159,6 +171,7 @@ a:hover{
     text-decoration: none;
     cursor: pointer;
   }
+
 
 /*Image section*/
 #midSection{
