@@ -57,15 +57,15 @@ window.onclick = function(event){
 
 
 //Hamburger Menu
-function menuButton(event){
-    let x = document.getElementByid('myLinks');
-    if(x.className === 'topNav'){
-        x.className += 'responsive';
-    } else{
-        x.className = 'topNav';
-    }
-    event.preventDefault()
-}
+// function menuButton(event){
+//     let x = document.getElementByid('myLinks');
+//     if(x.className === 'topNav'){
+//         x.className += 'responsive';
+//     } else{
+//         x.className = 'topNav';
+//     }
+//     event.preventDefault()
+// }
 
 //function to show the random dinners
 showNewDinner = ()=>{
@@ -127,6 +127,7 @@ newDinnerToEat = () => {
         historyContainer.appendChild(newButton);
       }
     }
+    getRecipe()
   };
 //     if(history.length <=7){
 //         const newButton = document.createElement('button');
@@ -150,23 +151,25 @@ clearField=()=>{
 }
 
 //API Call
-fetch(url, {
-    method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '8959ff9965msh4479dc11ddcddc4p1bcd30jsndfe8e2947c47',
-		'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
-	}
-})
-.then(res => res.json()) //parse response as JSON
-
-.then(data =>{
-
-console.log(data)
-
-})
-
-.catch(err => {
-
-console.log(`error ${err}`)
-
-})
+getRecipe = ()=>{
+    fetch(url, {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '8959ff9965msh4479dc11ddcddc4p1bcd30jsndfe8e2947c47',
+            'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
+        }
+    })
+    .then(res => res.json()) //parse response as JSON
+    
+    .then(data =>{
+    
+    console.log(data)
+    
+    })
+    
+    .catch(err => {
+    
+    console.log(`error ${err}`)
+    
+    })
+}
