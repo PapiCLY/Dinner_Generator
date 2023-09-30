@@ -18,6 +18,7 @@ let whySpan = document.querySelector('.whyClose')
 let contact = document.getElementById('contactModal')
 let contactBtn = document.getElementById('contactBtn')
 let contactSpan = document.querySelector('.contactClose')
+let url = `https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes&q=${newDinner}` 
 
 //opens modal
 aboutBtn.onclick = function(){
@@ -111,7 +112,7 @@ newDinnerToEat = () => {
         history.shift(); // Remove the oldest item from the history array
       }
       localStorage.setItem('dinnerHistory', JSON.stringify(history));
-  
+
       // Append the new dinner item as a button to the DOM
       const historyContainer = document.querySelector('#historyContainer');
       historyContainer.innerHTML = ''; // Clear the history container
@@ -147,3 +148,25 @@ clearField=()=>{
     newDinnerInput.value = ''
     
 }
+
+//API Call
+fetch(url, {
+    method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '8959ff9965msh4479dc11ddcddc4p1bcd30jsndfe8e2947c47',
+		'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
+	}
+})
+.then(res => res.json()) //parse response as JSON
+
+.then(data =>{
+
+console.log(data)
+
+})
+
+.catch(err => {
+
+console.log(`error ${err}`)
+
+})
