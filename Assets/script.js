@@ -18,7 +18,7 @@ let whySpan = document.querySelector('.whyClose')
 let contact = document.getElementById('contactModal')
 let contactBtn = document.getElementById('contactBtn')
 let contactSpan = document.querySelector('.contactClose')
-let url = `https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes&q=${newDinner}` 
+let url = `https://api.api-ninjas.com/v1/recipe?query=${newDinner}`
 
 //opens modal
 aboutBtn.onclick = function(){
@@ -155,8 +155,7 @@ getRecipe = ()=>{
     fetch(url, {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '8959ff9965msh4479dc11ddcddc4p1bcd30jsndfe8e2947c47',
-            'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
+            'X-API-Key': '2qb0bnJUl3ZN+kEXBNyYug==Ob6VAJD91XqPFdIk'
         }
     })
     .then(res => res.json()) //parse response as JSON
