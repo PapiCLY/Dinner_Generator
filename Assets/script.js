@@ -156,9 +156,7 @@ getRecipe = ()=>{
     let url = `https://api.api-ninjas.com/v1/recipe?query=${newDinner}`
     fetch(url, {
         method: 'GET',
-        headers: {
-            'X-API-Key': '2qb0bnJUl3ZN+kEXBNyYug==Ob6VAJD91XqPFdIk'
-        }
+        headers: { 'X-API-Key': '2qb0bnJUl3ZN+kEXBNyYug==Ob6VAJD91XqPFdIk'}
     })
     .then(res => res.json()) //parse response as JSON
     
