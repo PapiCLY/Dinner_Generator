@@ -3,7 +3,7 @@ User will have the option to randomly select a dinner idea when using this appli
 
 
 # Mock-up
-The following animations highlights the functionalty of the application
+The following animation highlights the functionalty of the application
 ![Alt text](Assets/Images/DG_animation.gif)
 
 
