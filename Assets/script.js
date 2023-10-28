@@ -150,7 +150,7 @@ clearField=()=>{
     
 }
 
-//API Call
+//API Call for recipies using API Ninjas
 getRecipe = ()=>{
     let newDinner = document.querySelector('#addToList').value
     let url = `https://api.api-ninjas.com/v1/recipe?query=${newDinner}`
